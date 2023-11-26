@@ -1,0 +1,115 @@
+@import "./mixins";
+
+.dynamic-form-generator {
+  padding-bottom: 50px;
+  .button-group {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .field-data {
+    position: relative;
+  }
+  .field-index-btn {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transform: translateX(-150%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #f4f4f4;
+  }
+}
+.field-data {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 0 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.input-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
+  &.flex-end {
+    align-items: end;
+  }
+  .input-group {
+    width: calc(50% - 20px);
+  }
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+
+  &.flexed {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .input-label {
+    margin-bottom: 5px;
+    color: #8e8e8e;
+    font-size: 14px;
+  }
+  .basic-input {
+    width: 100% !important;
+    height: 45px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    border-radius: 5px !important;
+    font-family: Poppins;
+  }
+  .text-input {
+    padding: 10px 15px;
+  }
+  .textarea-input {
+    height: 90px;
+  }
+  .select-input {
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 14px;
+    font-weight: 500;
+
+    &::placeholder {
+      @include placeholder;
+    }
+  }
+}
+.input-placeholder {
+  @include placeholder;
+}
+.remove-input-btn {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  .btn {
+    margin-top: -10px;
+  }
+}
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+.dropdown-options {
+  .options-label {
+    width: 100%;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 500;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+}

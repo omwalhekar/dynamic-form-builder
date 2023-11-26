@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Poppins;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.error-text {
+  margin-top: 3px;
+  font-size: 10px;
+  color: red;
+}
+.required-sign {
+  color: red;
+}
+.delete-btn {
+  height: 45px;
+  width: min-content;
+
+  &:active {
+    outline: none;
+    border: none;
+  }
+}
+.app-wrapper {
+  padding-top: 50px;
+}
+
+.custom-form-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-row: repeat(1, 1fr);
+  gap: 40px;
+}
+
+@import "./dynamicFormGenerator.scss";
+@import "./dynamicFormPreview.scss";
+@import "./overrides";

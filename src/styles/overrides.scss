@@ -1,0 +1,25 @@
+.btn {
+  font-family: Poppins !important;
+  font-weight: 500 !important;
+}
+.form-switch {
+  input {
+    height: 18px !important;
+    width: 40px !important;
+    cursor: pointer !important;
+  }
+}
+.form-modal {
+  font-family: Poppins !important;
+  .form-item {
+    display: flex;
+    gap: 5px;
+  }
+
+  .form-array-value {
+    padding: 0 10px;
+    margin-right: 5px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+  }
+}
